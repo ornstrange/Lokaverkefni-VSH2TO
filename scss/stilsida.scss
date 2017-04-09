@@ -2,3 +2,12 @@
 
 @import url("../auka/bootstrap/css/bootstrap.min.css");
 @import url("../auka/font-awesome/font-awesome.min.css");
+
+// GLOBAL
+
+body {
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+}
