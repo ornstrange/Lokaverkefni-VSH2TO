@@ -9,6 +9,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  -moz-font-feature-settings: "liga" on; }
+  -moz-font-feature-settings: "liga" on;
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: 'Raleway', sans-serif; }
+
+#navbar {
+  float: right; }
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    float: none; } }
 
 /*# sourceMappingURL=stilsida.css.map */
