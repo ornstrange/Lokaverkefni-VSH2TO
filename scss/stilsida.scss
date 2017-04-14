@@ -1,7 +1,17 @@
 // IMPORTS
 
 @import url("../auka/bootstrap/css/bootstrap.min.css");
-@import url("../auka/font-awesome/font-awesome.min.css");
+@import url("../auka/font-awesome/css/font-awesome.min.css");
+
+// VARIABLES
+
+$hvitur: #F8F7E1;
+$svartur: #282721;
+$tan: #DBD5B5;
+$blar: #2B9EB3;
+$gulur: #FCAB10;
+$raudur: #F8333C;
+$graenn: #44AF69;
 
 // GLOBAL
 
@@ -11,3 +21,6 @@ body {
   text-rendering: optimizeLegibility;
   -moz-font-feature-settings: "liga" on;
 }
+
+// STYLES
+
