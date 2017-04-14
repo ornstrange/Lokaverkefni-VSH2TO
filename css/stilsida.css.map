@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEQ,sDAA8C;AAC9C,4DAAoD;AAc5D,IAAK;EACJ,sBAAsB,EAAE,WAAW;EAClC,uBAAuB,EAAE,SAAS;EAClC,cAAc,EAAE,kBAAkB;EAClC,0BAA0B,EAAE,SAAS",
+"mappings": "AAEQ,sDAA8C;AAC9C,4DAAoD;AACpD,wEAAgE;AAIxE;;;EAGE;AAcF,IAAK;EACJ,sBAAsB,EAAE,WAAW;EAClC,uBAAuB,EAAE,SAAS;EAClC,cAAc,EAAE,kBAAkB;EAClC,0BAA0B,EAAE,SAAS",
 "sources": ["../scss/stilsida.scss"],
 "names": [],
 "file": "stilsida.css"
