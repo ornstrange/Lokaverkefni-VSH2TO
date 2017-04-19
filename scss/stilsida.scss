@@ -13,13 +13,28 @@ font-family: 'Open Sans', sans-serif;
 
 // VARIABLES
 
-$hvitur: #F8F7E1;
-$svartur: #282721;
+$hvitur: #F8F7F6;
+$grar: #A8A7A6;
+$svartur: #282726;
 $tan: #DBD5B5;
 $blar: #2B9EB3;
 $gulur: #FCAB10;
 $raudur: #F8333C;
 $graenn: #44AF69;
+
+// MIXINS
+
+@mixin animate($timi, $delay, $nafn) {
+  animation-duration: $timi;
+  animation-delay: $delay;
+  animation-fill-mode: both;
+  animation-name: $nafn;
+}
+
+@mixin trans($timi: 1s) {
+	transition: $timi;
+	transition-timing-function: ease-in-out;
+}
 
 // GLOBAL
 
@@ -36,16 +51,211 @@ h1, h2, h3 {
 	font-family: 'Raleway', sans-serif;
 }
 
-// STYLES
-
-#navbar {
-	float: right;
+a {
+	color: $grar !important;
 }
 
-// BREAKPOINTS
-
-@media screen and (max-width: 768px) {
-	#navbar {
-		float: none;
+a:hover {
+	color: $hvitur !important;
+	h1 {
+		color: $hvitur !important;
 	}
+}
+
+.shrink {
+	height: 50px !important;
+	@include trans(.8s);
+	#navbar {
+		.nav {
+			margin-top: 0;
+			@include trans(.8s);
+		}
+	}
+	.navbar-brand {
+		margin-top: 0;
+		@include trans(.8s);
+		h1 {
+			font-size: 36px;
+			margin-top: -10px;
+			transition: margin-top .8s, font-size .8s, color 0s;
+		}
+	}
+}
+
+// STYLES
+
+header {
+	.navbar-inverse {
+		background: $svartur;
+	}
+	nav {
+		height: 100px;
+		@include trans(.8s);
+		.navbar-brand {
+			margin-top: 10px;
+			@include trans(.8s);
+			h1 {
+				font-size: 48px;
+				transition: margin-top .8s, font-size .8s, color 0s;
+			}
+		}
+		#navbar {
+			background: $svartur;
+			font-size: 18px;
+			.nav {
+				margin-top: 25px;
+				@include trans(.8s);
+				li {
+					a {
+						padding: 0;
+						margin: 15px;
+						position: relative;
+					}
+					a:before {
+					  content: "";
+					  position: absolute;
+					  width: 100%;
+					  height: 2px;
+					  bottom: -5px;
+					  left: 0;
+					  background-color: $hvitur;
+					  transform: scaleX(0);
+					  transform-origin: right;
+					  transition: all 0.3s ease-in-out 0s;
+					}
+					a:hover:before {
+					  transform: scaleX(1);
+					}
+				}
+			}
+		}
+	}
+}
+
+#land-page {
+	background: $hvitur;
+	height: 700px;
+	.container {
+		margin-top: 80px;
+	}
+	h1 {
+		margin-top: 100px;
+		font-size: 250px;
+		text-align: center;
+		color: $svartur;
+		line-height: 150px;
+		overflow: visible;
+	}
+	.land-page-logo {
+		.char1, .char2, .char3, .char4 {
+			display: inline-block;
+		}
+		.char1{
+			@include animate(1s, .3s, nidurvinstri);
+		}
+		.char2{
+			color: $grar;
+			@include animate(1s, 2.1s, nidur);
+		}
+		.char3{
+			@include animate(1s, .9s, nidur);
+		}
+		.char4{
+			color: $grar;
+			@include animate(1s, 1.5s, nidurhaegri);
+		}
+	}
+	.land-page-logo2 {
+		.char1, .char2, .char3, .char4 {
+			display: inline-block;
+		}
+		.char1{
+			color: $grar;
+			@include animate(1s, 2.4s, uppvinstri);
+		}
+		.char2{
+			@include animate(1s, .6s, upp);
+		}
+		.char3{
+			color: $grar;
+			@include animate(1s, 1.8s, upp);
+		}
+		.char4{
+			@include animate(1s, 1.2s, upphaegri);
+		}
+	}
+}
+
+// ANIMATIONS
+
+@keyframes nidur {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes nidurvinstri {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes nidurhaegri {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes upp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes uppvinstri {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes upphaegri {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }

@@ -23,7 +23,7 @@
           <a class="navbar-brand" href="#land-page"><h1>MONO</h1></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li><a href="#tonlistarmenn">ARTISTS</a></li>
             <li><a href="#upplysingar">INFORMATION</a></li>
             <li><a href="#form">GET TICKETS</a></li>
@@ -34,7 +34,11 @@
 	</header>
 	
 	<section id="land-page">
-
+	.
+		<div class="container">
+			<h1 class="land-page-logo">MONO</h1>
+			<h1 class="land-page-logo2">MONO</h1>
+		</div>
 	</section>
 	
 	<section id="tonlistarmenn">
@@ -58,7 +62,21 @@
 <script src="auka/jquery/dist/jquery.min.js"></script>
 <script src="auka/bootstrap/js/bootstrap.min.js"></script>
 <script src="auka/smooth-scroll/dist/js/smooth-scroll.js"></script>
+<script src="auka/lettering/jquery.lettering-0.6.1.min.js"></script>
 <script>smoothScroll.init();</script>
+<script>
+	  $(document).ready(function() {
+	    $(".land-page-logo").lettering();
+	    $(".land-page-logo2").lettering();
+	  });
+	  $(window).scroll(function() {
+		  if ($(document).scrollTop() > 100) {
+		    $('nav').addClass('shrink');
+		  } else {
+		    $('nav').removeClass('shrink');
+		  }
+		});
+</script>
 <!-- / -->
 </body>
 </html>

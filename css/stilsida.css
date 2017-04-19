@@ -16,11 +16,171 @@ h1, h2, h3 {
   margin: 0;
   font-family: 'Raleway', sans-serif; }
 
-#navbar {
-  float: right; }
+a {
+  color: #A8A7A6 !important; }
 
-@media screen and (max-width: 768px) {
-  #navbar {
-    float: none; } }
+a:hover {
+  color: #F8F7F6 !important; }
+  a:hover h1 {
+    color: #F8F7F6 !important; }
+
+.shrink {
+  height: 50px !important;
+  transition: 0.8s;
+  transition-timing-function: ease-in-out; }
+  .shrink #navbar .nav {
+    margin-top: 0;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out; }
+  .shrink .navbar-brand {
+    margin-top: 0;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out; }
+    .shrink .navbar-brand h1 {
+      font-size: 36px;
+      margin-top: -10px;
+      transition: margin-top .8s, font-size .8s, color 0s; }
+
+header .navbar-inverse {
+  background: #282726; }
+header nav {
+  height: 100px;
+  transition: 0.8s;
+  transition-timing-function: ease-in-out; }
+  header nav .navbar-brand {
+    margin-top: 10px;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out; }
+    header nav .navbar-brand h1 {
+      font-size: 48px;
+      transition: margin-top .8s, font-size .8s, color 0s; }
+  header nav #navbar {
+    background: #282726;
+    font-size: 18px; }
+    header nav #navbar .nav {
+      margin-top: 25px;
+      transition: 0.8s;
+      transition-timing-function: ease-in-out; }
+      header nav #navbar .nav li a {
+        padding: 0;
+        margin: 15px;
+        position: relative; }
+      header nav #navbar .nav li a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #F8F7F6;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.3s ease-in-out 0s; }
+      header nav #navbar .nav li a:hover:before {
+        transform: scaleX(1); }
+
+#land-page {
+  background: #F8F7F6;
+  height: 700px; }
+  #land-page .container {
+    margin-top: 80px; }
+  #land-page h1 {
+    margin-top: 100px;
+    font-size: 250px;
+    text-align: center;
+    color: #282726;
+    line-height: 150px;
+    overflow: visible; }
+  #land-page .land-page-logo .char1, #land-page .land-page-logo .char2, #land-page .land-page-logo .char3, #land-page .land-page-logo .char4 {
+    display: inline-block; }
+  #land-page .land-page-logo .char1 {
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    animation-name: nidurvinstri; }
+  #land-page .land-page-logo .char2 {
+    color: #A8A7A6;
+    animation-duration: 1s;
+    animation-delay: 2.1s;
+    animation-fill-mode: both;
+    animation-name: nidur; }
+  #land-page .land-page-logo .char3 {
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-fill-mode: both;
+    animation-name: nidur; }
+  #land-page .land-page-logo .char4 {
+    color: #A8A7A6;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    animation-name: nidurhaegri; }
+  #land-page .land-page-logo2 .char1, #land-page .land-page-logo2 .char2, #land-page .land-page-logo2 .char3, #land-page .land-page-logo2 .char4 {
+    display: inline-block; }
+  #land-page .land-page-logo2 .char1 {
+    color: #A8A7A6;
+    animation-duration: 1s;
+    animation-delay: 2.4s;
+    animation-fill-mode: both;
+    animation-name: uppvinstri; }
+  #land-page .land-page-logo2 .char2 {
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+    animation-name: upp; }
+  #land-page .land-page-logo2 .char3 {
+    color: #A8A7A6;
+    animation-duration: 1s;
+    animation-delay: 1.8s;
+    animation-fill-mode: both;
+    animation-name: upp; }
+  #land-page .land-page-logo2 .char4 {
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+    animation-name: upphaegri; }
+
+@keyframes nidur {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+@keyframes nidurvinstri {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+@keyframes nidurhaegri {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+@keyframes upp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+@keyframes uppvinstri {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+@keyframes upphaegri {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
 
 /*# sourceMappingURL=stilsida.css.map */
