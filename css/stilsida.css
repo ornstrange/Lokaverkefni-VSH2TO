@@ -81,7 +81,8 @@ header nav {
 
 #land-page {
   background: #F8F7F6;
-  height: 700px; }
+  height: 700px;
+  overflow: hidden; }
   #land-page .container {
     margin-top: 80px; }
   #land-page h1 {
