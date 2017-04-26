@@ -15,6 +15,7 @@ font-family: 'Open Sans', sans-serif;
 
 $hvitur: #F8F7F6;
 $grar: #A8A7A6;
+$dokk-grar: #585756;
 $svartur: #282726;
 $tan: #DBD5B5;
 $blar: #2B9EB3;
@@ -33,7 +34,6 @@ $graenn: #44AF69;
 
 @mixin trans($timi: 1s) {
 	transition: $timi;
-	transition-timing-function: ease-in-out;
 }
 
 // GLOBAL
@@ -44,6 +44,7 @@ body {
   text-rendering: optimizeLegibility;
   -moz-font-feature-settings: "liga" on;
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 
 h1, h2, h3 {
@@ -82,11 +83,46 @@ a:hover {
 	}
 }
 
+.hvitur-header {
+	.navbar-inverse {
+		background: $hvitur;
+		transition: .8s;
+	}
+	nav {
+		.navbar-brand {
+			h1:hover {
+				color: $svartur !important;
+			}
+		}
+	}
+	#navbar {
+		background: $hvitur;
+		transition: .8s;
+		.nav {
+			li {
+				a:hover {
+					color: $svartur !important;
+				}
+				a:before {
+					background-color: $svartur;
+				}
+			}
+		}
+	}
+}
+
+.fade {
+	opacity: 1;
+}
+
 // STYLES
 
+// header
 header {
 	.navbar-inverse {
 		background: $svartur;
+		border: 0;
+		transition: .8s;
 	}
 	nav {
 		height: 100px;
@@ -102,6 +138,7 @@ header {
 		#navbar {
 			background: $svartur;
 			font-size: 18px;
+			transition: .8s;
 			.nav {
 				margin-top: 25px;
 				@include trans(.8s);
@@ -132,12 +169,14 @@ header {
 	}
 }
 
+// Land page
 #land-page {
 	background: $hvitur;
 	height: 700px;
 	overflow: hidden;
+	border: 1px solid black;
 	.container {
-		margin-top: 80px;
+		margin-top: 90px;
 	}
 	h1 {
 		margin-top: 100px;
@@ -183,6 +222,64 @@ header {
 		}
 		.char4{
 			@include animate(1s, 1.2s, upphaegri);
+		}
+	}
+}
+
+// Tónlistarmenn
+#tonlistarmenn {
+	background: $svartur;
+	height: 700px;
+	.artist {
+		margin-top: 100px;
+		.crop-mynd {
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin: 0 auto;
+			.kiasmos {
+				img {
+					position: relative;
+					right: 85px;
+					height: 100%;
+				}
+			}
+			.kolombo {
+				img {
+					position: relative;
+					right: 30px;
+					height: 100%;
+				}
+			}
+			.goldlink {
+				img {
+					position: relative;
+					right: 100px;
+					height: 100%;
+				}
+			}
+		}
+		.kolombo-texti {
+			margin-bottom: 50px;
+		}
+		.texti {
+			color: $hvitur;
+			margin-top: 50px;
+			background: lighten($svartur, 2%);
+			padding: 10px;
+			h1 {
+				font-weight: bolder;
+				font-size: 32px;
+				letter-spacing: 5px;
+				margin-bottom: 10px;
+				text-align: right;
+			}
+			p {
+				color: $grar;
+				font-size: 16px;
+				font-weight: lighter;
+			}
 		}
 	}
 }
@@ -259,4 +356,19 @@ header {
     opacity: 1;
     transform: none;
   }
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 1680px) {
+	#land-page {
+		height: 1000px;
+		h1 {
+		margin-top: 150px;
+		font-size: 300px;
+		}
+	}
+
+	#tonlistarmenn {
+		height: 900px;
+	}
 }

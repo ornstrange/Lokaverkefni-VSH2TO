@@ -28,10 +28,10 @@
 	// Default settings
 	var defaults = {
 		selector: '[data-scroll]',
-		selectorHeader: null,
-		speed: 500,
-		easing: 'easeInOutCubic',
-		offset: 0,
+		selectorHeader: '[data-header]',
+		speed: 2000,
+		easing: 'easeInOutQuad',
+		offset: -100,
 		callback: function () {}
 	};
 

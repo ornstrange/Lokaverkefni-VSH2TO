@@ -10,8 +10,8 @@
 </head>
 <body>
 
-	<header>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+	<header id="header">
+		<nav data-header class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -20,13 +20,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#land-page"><h1>MONO</h1></a>
+          <a data-scroll class="navbar-brand" href="#land-page"><h1>MONO</h1></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#tonlistarmenn">ARTISTS</a></li>
-            <li><a href="#upplysingar">INFORMATION</a></li>
-            <li><a href="#form">GET TICKETS</a></li>
+            <li><a data-scroll href="#tonlistarmenn">ARTISTS</a></li>
+            <li><a data-scroll href="#upplysingar">INFORMATION</a></li>
+            <li><a data-scroll href="#form">GET TICKETS</a></li>
           </ul>
         </div>
       </div>
@@ -34,7 +34,6 @@
 	</header>
 	
 	<section id="land-page">
-	.
 		<div class="container">
 			<h1 class="land-page-logo">MONO</h1>
 			<h1 class="land-page-logo2">MONO</h1>
@@ -42,7 +41,57 @@
 	</section>
 	
 	<section id="tonlistarmenn">
-	
+		<div class="container">
+			<div class="row fade">
+				<div class="col col-md-4">
+					<div class="artist">
+						<div class="crop-mynd">
+							<picture class="kiasmos">
+								<source media="(max-width: 768px)" srcset="img/artists/kiasmos_small.jpg">
+		  					<img src="img/artists/kiasmos.jpg">
+							</picture>
+						</div>
+						<div class="texti fade">
+							<h1>KIASMOS</h1>
+							<p>Ólafur Arnalds and Janus Rasmussen have dedicated themselves to exploring the area in-between Ólafur’s more acoustic, 
+							piano-based solo work and Janus’s synth-heavy electro pop, 
+							with their collaborative electronic project Kiasmos.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col col-md-4">
+					<div class="artist">
+						<div class="texti kolombo-texti">
+							<h1>KOLOMBO</h1>
+							<p>Olivier Grégoire is a prolific and well renowned producer and DJ from Belgium. 
+							He has truly mastered the art of modern production. 
+							Under his massive KOLOMBO moniker he has had many solid releases and remixes</p>
+						</div>
+						<div class="crop-mynd">
+							<picture class="kolombo">
+								<source media="(max-width: 768px)" srcset="img/artists/kolombo_small.jpg">
+		  					<img src="img/artists/kolombo.jpg">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<div class="col col-md-4">
+					<div class="artist">
+						<div class="crop-mynd">
+							<picture class="goldlink">
+								<source media="(max-width: 768px)" srcset="img/artists/goldlink_small.jpg">
+		  					<img src="img/artists/goldlink.jpg">
+							</picture>
+						</div>
+						<div class="texti">
+							<h1>GOLDLINK</h1>
+							<p>GoldLink is a new wave artist from the DMV who incorporates elements of Hip-Hop, 
+							R&amp;B and House in a sub-genre he has dubbed as Future Bounce.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	
 	<section id="upplysingar">
@@ -63,18 +112,62 @@
 <script src="auka/bootstrap/js/bootstrap.min.js"></script>
 <script src="auka/smooth-scroll/dist/js/smooth-scroll.js"></script>
 <script src="auka/lettering/jquery.lettering-0.6.1.min.js"></script>
-<script>smoothScroll.init();</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 <script>
 	  $(document).ready(function() {
 	    $(".land-page-logo").lettering();
 	    $(".land-page-logo2").lettering();
 	  });
 	  $(window).scroll(function() {
-		  if ($(document).scrollTop() > 100) {
+		  if ($(document).scrollTop() > 600) {
 		    $('nav').addClass('shrink');
-		  } else {
+		  } 
+		  else {
 		    $('nav').removeClass('shrink');
 		  }
+		  if ($(document).scrollTop() > 600) {
+		    $('header').addClass('hvitur-header');
+		  } 
+		  else {
+		    $('header').removeClass('hvitur-header');
+		  }
+		});
+		smoothScroll.init();
+		$(window).on("load",function() {
+		  $(window).scroll(function() {
+		    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+		    $(".fade").each(function() {
+		      /* Check the location of each desired element */
+		      var objectBottom = $(this).offset().top + $(this).outerHeight();
+		      
+		      /* If the element is completely within bounds of the window, fade it in */
+		      if (objectBottom-200 < windowBottom) { //object comes into view (scrolling down)
+		        if ($(this).css("opacity")==0) {$(this).fadeTo(1800,1);}
+		      } else { //object goes out of view (scrolling up)
+		        if ($(this).css("opacity")==1) {$(this).fadeTo(400,0);}
+		      }
+		    });
+		  }).scroll(); //invoke scroll-handler on page-load
+		});
+		$(function(){
+		  var $window = $(window);
+			var scrollTime = 2;
+			var scrollDistance = 700;
+			if($(window).height() > 800) {
+				scrollDistance = 950;
+			}
+			$window.on("mousewheel DOMMouseScroll", function(event){
+				event.preventDefault();
+				var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+				var scrollTop = $window.scrollTop();
+				var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+				TweenMax.to($window, scrollTime, {
+					scrollTo : { y: finalScroll, autoKill:true },
+						ease: Power1.easeInOut,
+						overwrite: 5
+					});
+			});
 		});
 </script>
 <!-- / -->
