@@ -65,20 +65,20 @@ a:hover {
 
 .shrink {
 	height: 50px !important;
-	@include trans(.8s);
+	@include trans(.5s);
 	#navbar {
 		.nav {
 			margin-top: 0;
-			@include trans(.8s);
+			@include trans(.5s);
 		}
 	}
 	.navbar-brand {
 		margin-top: 0;
-		@include trans(.8s);
+		@include trans(.5s);
 		h1 {
 			font-size: 36px;
 			margin-top: -10px;
-			transition: margin-top .8s, font-size .8s, color 0s;
+			transition: margin-top .5s, font-size .5s, color 0s;
 		}
 	}
 }
@@ -86,7 +86,7 @@ a:hover {
 .hvitur-header {
 	.navbar-inverse {
 		background: $hvitur;
-		transition: .8s;
+		transition: .5s;
 	}
 	nav {
 		.navbar-brand {
@@ -97,7 +97,7 @@ a:hover {
 	}
 	#navbar {
 		background: $hvitur;
-		transition: .8s;
+		transition: .5s;
 		.nav {
 			li {
 				a:hover {
@@ -122,26 +122,26 @@ header {
 	.navbar-inverse {
 		background: $svartur;
 		border: 0;
-		transition: .8s;
+		transition: .5s;
 	}
 	nav {
 		height: 100px;
-		@include trans(.8s);
+		@include trans(.5s);
 		.navbar-brand {
 			margin-top: 10px;
-			@include trans(.8s);
+			@include trans(.5s);
 			h1 {
 				font-size: 48px;
-				transition: margin-top .8s, font-size .8s, color 0s;
+				transition: margin-top .5s, font-size .5s, color 0s;
 			}
 		}
 		#navbar {
 			background: $svartur;
 			font-size: 18px;
-			transition: .8s;
+			transition: .5s;
 			.nav {
 				margin-top: 25px;
-				@include trans(.8s);
+				@include trans(.5s);
 				li {
 					a {
 						padding: 0;
@@ -230,14 +230,20 @@ header {
 #tonlistarmenn {
 	background: $svartur;
 	height: 700px;
+	overflow: hidden;
 	.artist {
 		margin-top: 100px;
+		padding-top: 25px;
+		height: 550px;
+		background: linear-gradient(125deg, lighten($svartur, 4%), $svartur);
+		border-radius: 325px 325px 25px 25px;
 		.crop-mynd {
 			width: 300px;
 			height: 300px;
 			border-radius: 50%;
 			overflow: hidden;
 			margin: 0 auto;
+			transition: .4s ease-in-out;
 			.kiasmos {
 				img {
 					position: relative;
@@ -260,20 +266,26 @@ header {
 				}
 			}
 		}
-		.kolombo-texti {
-			margin-bottom: 50px;
+		.crop-mynd:hover {
+			transform: scale(1.04) rotate(6deg);
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 		}
 		.texti {
-			color: $hvitur;
-			margin-top: 50px;
-			background: lighten($svartur, 2%);
+			margin-top: 25px;
 			padding: 10px;
+			text-align: left;
 			h1 {
+				color: $hvitur;
 				font-weight: bolder;
 				font-size: 32px;
 				letter-spacing: 5px;
 				margin-bottom: 10px;
 				text-align: right;
+				transition: .4s ease-in-out;
+			}
+			h1:hover {
+				color: $gulur;
+				text-shadow: 0px 0px 5px rgba(0,0,0,.3);
 			}
 			p {
 				color: $grar;
@@ -281,6 +293,17 @@ header {
 				font-weight: lighter;
 			}
 		}
+	}
+	.ofugt-artist {
+		border-radius: 25px 25px 325px 325px;
+		padding-top: 0;
+		padding-bottom: 25px;
+		height: 550px;
+		background: linear-gradient(-45deg, lighten($svartur, 4%), $svartur);
+	}
+	.texti {
+		margin-bottom: 40px;
+		text-align: center;
 	}
 }
 
@@ -361,7 +384,7 @@ header {
 // MEDIA QUERIES
 @media screen and (min-width: 1680px) {
 	#land-page {
-		height: 1000px;
+		height: 950px;
 		h1 {
 		margin-top: 150px;
 		font-size: 300px;
@@ -369,6 +392,6 @@ header {
 	}
 
 	#tonlistarmenn {
-		height: 900px;
+		height: 950px;
 	}
 }

@@ -27,26 +27,26 @@ a:hover {
 
 .shrink {
   height: 50px !important;
-  transition: 0.8s; }
+  transition: 0.5s; }
   .shrink #navbar .nav {
     margin-top: 0;
-    transition: 0.8s; }
+    transition: 0.5s; }
   .shrink .navbar-brand {
     margin-top: 0;
-    transition: 0.8s; }
+    transition: 0.5s; }
     .shrink .navbar-brand h1 {
       font-size: 36px;
       margin-top: -10px;
-      transition: margin-top .8s, font-size .8s, color 0s; }
+      transition: margin-top .5s, font-size .5s, color 0s; }
 
 .hvitur-header .navbar-inverse {
   background: #F8F7F6;
-  transition: .8s; }
+  transition: .5s; }
 .hvitur-header nav .navbar-brand h1:hover {
   color: #282726 !important; }
 .hvitur-header #navbar {
   background: #F8F7F6;
-  transition: .8s; }
+  transition: .5s; }
   .hvitur-header #navbar .nav li a:hover {
     color: #282726 !important; }
   .hvitur-header #navbar .nav li a:before {
@@ -58,23 +58,23 @@ a:hover {
 header .navbar-inverse {
   background: #282726;
   border: 0;
-  transition: .8s; }
+  transition: .5s; }
 header nav {
   height: 100px;
-  transition: 0.8s; }
+  transition: 0.5s; }
   header nav .navbar-brand {
     margin-top: 10px;
-    transition: 0.8s; }
+    transition: 0.5s; }
     header nav .navbar-brand h1 {
       font-size: 48px;
-      transition: margin-top .8s, font-size .8s, color 0s; }
+      transition: margin-top .5s, font-size .5s, color 0s; }
   header nav #navbar {
     background: #282726;
     font-size: 18px;
-    transition: .8s; }
+    transition: .5s; }
     header nav #navbar .nav {
       margin-top: 25px;
-      transition: 0.8s; }
+      transition: 0.5s; }
       header nav #navbar .nav li a {
         padding: 0;
         margin: 15px;
@@ -158,15 +158,21 @@ header nav {
 
 #tonlistarmenn {
   background: #282726;
-  height: 700px; }
+  height: 700px;
+  overflow: hidden; }
   #tonlistarmenn .artist {
-    margin-top: 100px; }
+    margin-top: 100px;
+    padding-top: 25px;
+    height: 550px;
+    background: linear-gradient(125deg, #323130, #282726);
+    border-radius: 325px 325px 25px 25px; }
     #tonlistarmenn .artist .crop-mynd {
       width: 300px;
       height: 300px;
       border-radius: 50%;
       overflow: hidden;
-      margin: 0 auto; }
+      margin: 0 auto;
+      transition: .4s ease-in-out; }
       #tonlistarmenn .artist .crop-mynd .kiasmos img {
         position: relative;
         right: 85px;
@@ -179,23 +185,37 @@ header nav {
         position: relative;
         right: 100px;
         height: 100%; }
-    #tonlistarmenn .artist .kolombo-texti {
-      margin-bottom: 50px; }
+    #tonlistarmenn .artist .crop-mynd:hover {
+      transform: scale(1.04) rotate(6deg);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
     #tonlistarmenn .artist .texti {
-      color: #F8F7F6;
-      margin-top: 50px;
-      background: #2d2c2b;
-      padding: 10px; }
+      margin-top: 25px;
+      padding: 10px;
+      text-align: left; }
       #tonlistarmenn .artist .texti h1 {
+        color: #F8F7F6;
         font-weight: bolder;
         font-size: 32px;
         letter-spacing: 5px;
         margin-bottom: 10px;
-        text-align: right; }
+        text-align: right;
+        transition: .4s ease-in-out; }
+      #tonlistarmenn .artist .texti h1:hover {
+        color: #FCAB10;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); }
       #tonlistarmenn .artist .texti p {
         color: #A8A7A6;
         font-size: 16px;
         font-weight: lighter; }
+  #tonlistarmenn .ofugt-artist {
+    border-radius: 25px 25px 325px 325px;
+    padding-top: 0;
+    padding-bottom: 25px;
+    height: 550px;
+    background: linear-gradient(-45deg, #323130, #282726); }
+  #tonlistarmenn .texti {
+    margin-bottom: 40px;
+    text-align: center; }
 
 @keyframes nidur {
   from {
@@ -241,12 +261,12 @@ header nav {
     transform: none; } }
 @media screen and (min-width: 1680px) {
   #land-page {
-    height: 1000px; }
+    height: 950px; }
     #land-page h1 {
       margin-top: 150px;
       font-size: 300px; }
 
   #tonlistarmenn {
-    height: 900px; } }
+    height: 950px; } }
 
 /*# sourceMappingURL=stilsida.css.map */

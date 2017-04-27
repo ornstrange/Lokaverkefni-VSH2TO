@@ -7,6 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/stilsida.css">
 	<title>Lokaverkefni VSH2</title>
+	<!-- JAVASCRIPT -->
+	<script src="auka/jquery/dist/jquery.min.js"></script>
+	<script src="auka/smooth-scroll/dist/js/smooth-scroll.js"></script>
+	<script src="auka/bootstrap/js/bootstrap.min.js"></script>
+	<script src="auka/lettering/jquery.lettering-0.6.1.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<script src="js/javascript.js"></script>
 </head>
 <body>
 
@@ -60,12 +68,12 @@
 					</div>
 				</div>
 				<div class="col col-md-4">
-					<div class="artist">
-						<div class="texti kolombo-texti">
+					<div class="artist ofugt-artist">
+						<div class="texti">
 							<h1>KOLOMBO</h1>
 							<p>Olivier Grégoire is a prolific and well renowned producer and DJ from Belgium. 
-							He has truly mastered the art of modern production. 
-							Under his massive KOLOMBO moniker he has had many solid releases and remixes</p>
+							He has truly mastered the art of production. 
+							<br>Under his massive KOLOMBO moniker he has had many solid releases and remixes</p>
 						</div>
 						<div class="crop-mynd">
 							<picture class="kolombo">
@@ -105,71 +113,5 @@
 	<footer>
 		<div class="sponsors"></div>
 	</footer>
-
-
-<!-- JAVASCRIPT -->
-<script src="auka/jquery/dist/jquery.min.js"></script>
-<script src="auka/bootstrap/js/bootstrap.min.js"></script>
-<script src="auka/smooth-scroll/dist/js/smooth-scroll.js"></script>
-<script src="auka/lettering/jquery.lettering-0.6.1.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-<script>
-	  $(document).ready(function() {
-	    $(".land-page-logo").lettering();
-	    $(".land-page-logo2").lettering();
-	  });
-	  $(window).scroll(function() {
-		  if ($(document).scrollTop() > 600) {
-		    $('nav').addClass('shrink');
-		  } 
-		  else {
-		    $('nav').removeClass('shrink');
-		  }
-		  if ($(document).scrollTop() > 600) {
-		    $('header').addClass('hvitur-header');
-		  } 
-		  else {
-		    $('header').removeClass('hvitur-header');
-		  }
-		});
-		smoothScroll.init();
-		$(window).on("load",function() {
-		  $(window).scroll(function() {
-		    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-		    $(".fade").each(function() {
-		      /* Check the location of each desired element */
-		      var objectBottom = $(this).offset().top + $(this).outerHeight();
-		      
-		      /* If the element is completely within bounds of the window, fade it in */
-		      if (objectBottom-200 < windowBottom) { //object comes into view (scrolling down)
-		        if ($(this).css("opacity")==0) {$(this).fadeTo(1800,1);}
-		      } else { //object goes out of view (scrolling up)
-		        if ($(this).css("opacity")==1) {$(this).fadeTo(400,0);}
-		      }
-		    });
-		  }).scroll(); //invoke scroll-handler on page-load
-		});
-		$(function(){
-		  var $window = $(window);
-			var scrollTime = 2;
-			var scrollDistance = 700;
-			if($(window).height() > 800) {
-				scrollDistance = 950;
-			}
-			$window.on("mousewheel DOMMouseScroll", function(event){
-				event.preventDefault();
-				var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-				var scrollTop = $window.scrollTop();
-				var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-				TweenMax.to($window, scrollTime, {
-					scrollTo : { y: finalScroll, autoKill:true },
-						ease: Power1.easeInOut,
-						overwrite: 5
-					});
-			});
-		});
-</script>
-<!-- / -->
 </body>
 </html>
