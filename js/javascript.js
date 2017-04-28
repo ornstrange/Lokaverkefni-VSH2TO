@@ -18,7 +18,7 @@ $(window).scroll(function() {
   else if($(document).scrollTop() < 300){
     $('header').removeClass('hvitur-header');
   }
-  if ($(document).scrollTop() > 2300) {
+  if ($(document).scrollTop() > 2000) {
     $('header').removeClass('hvitur-header');
   }
 });
