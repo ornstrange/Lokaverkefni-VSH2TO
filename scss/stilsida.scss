@@ -175,6 +175,17 @@ header {
 	height: 700px;
 	overflow: hidden;
 	border: 1px solid black;
+	.or {
+		position: fixed;
+		right: 15px;
+		bottom: 15px;
+		img {
+			transform: rotate(90deg);
+			background: $svartur;
+			padding: 5px;
+			border-radius: 5px;
+		}
+	}
 	.container {
 		margin-top: 90px;
 	}
@@ -229,10 +240,12 @@ header {
 // Tónlistarmenn
 #tonlistarmenn {
 	background: $svartur;
-	height: 700px;
-	overflow: hidden;
+	height: 1375px;
+	.art2 {
+		margin-top: 75px;
+	}
 	.artist {
-		margin-top: 100px;
+		margin-top: 75px;
 		padding-top: 25px;
 		height: 550px;
 		background: linear-gradient(125deg, lighten($svartur, 4%), $svartur);
@@ -265,9 +278,30 @@ header {
 					height: 100%;
 				}
 			}
+			.chris {
+				img {
+					position: relative;
+					right: 85px;
+					height: 100%;
+				}
+			}
+			.carmack {
+				img {
+					position: relative;
+					right: 30px;
+					height: 100%;
+				}
+			}
+			.flava {
+				img {
+					position: relative;
+					right: 100px;
+					height: 100%;
+				}
+			}
 		}
 		.crop-mynd:hover {
-			transform: scale(1.04) rotate(6deg);
+			transform: scale(1.02) rotate(3deg);
 			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 		}
 		.texti {
@@ -300,10 +334,13 @@ header {
 		padding-bottom: 25px;
 		height: 550px;
 		background: linear-gradient(-45deg, lighten($svartur, 4%), $svartur);
-	}
-	.texti {
-		margin-bottom: 40px;
-		text-align: center;
+		.texti {
+			margin-bottom: 40px;
+			text-align: left;
+		}
+		.texti-chris {
+			margin-bottom: 10px;
+		}
 	}
 }
 
@@ -392,6 +429,15 @@ header {
 	}
 
 	#tonlistarmenn {
-		height: 950px;
+		height: 1800px;
+		.texti {
+			margin-top: 50px;
+		}
+		.artist {
+			margin-top: 150px;
+		}
+		.art2 {
+			margin-top: 200px;
+		}
 	}
 }

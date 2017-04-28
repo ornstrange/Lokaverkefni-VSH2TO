@@ -31,7 +31,7 @@
 		selectorHeader: '[data-header]',
 		speed: 2000,
 		easing: 'easeInOutQuad',
-		offset: -100,
+		offset: -50,
 		callback: function () {}
 	};
 

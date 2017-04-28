@@ -18,10 +18,18 @@ $(window).scroll(function() {
   else if($(document).scrollTop() < 300){
     $('header').removeClass('hvitur-header');
   }
+  if ($(document).scrollTop() > 600) {
+    $('next-or').addClass('shrink');
+  } 
+  else if($(document).scrollTop() < 300){
+    $('next-or').removeClass('shrink');
+  }
 });
 
 // SMOOTH SCROLL LINKAR
 smoothScroll.init();
+
+// FADE IN
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -45,7 +53,7 @@ $(function(){
 	var scrollTime = 2;
 	var scrollDistance = 700; // Hversu marga pixla músin skrollar
 	if($(window).height() > 800) {
-		scrollDistance = 950;
+		scrollDistance = 900;
 	}
 	$window.on("mousewheel DOMMouseScroll", function(event){
 		event.preventDefault();
@@ -58,4 +66,14 @@ $(function(){
 			overwrite: 5
 		});
 	});
+  $("#next-or").click(function(event){
+    event.preventDefault();
+    var scrollTop = $window.scrollTop();
+    var finalScroll = scrollTop - parseInt(-scrollDistance);
+    TweenMax.to($window, scrollTime, {
+      scrollTo : { y: finalScroll, autoKill:true },
+      ease: Power1.easeInOut,
+      overwrite: 5
+    });
+  });
 });

@@ -98,6 +98,15 @@ header nav {
   height: 700px;
   overflow: hidden;
   border: 1px solid black; }
+  #land-page .or {
+    position: fixed;
+    right: 15px;
+    bottom: 15px; }
+    #land-page .or img {
+      transform: rotate(90deg);
+      background: #282726;
+      padding: 5px;
+      border-radius: 5px; }
   #land-page .container {
     margin-top: 90px; }
   #land-page h1 {
@@ -158,10 +167,11 @@ header nav {
 
 #tonlistarmenn {
   background: #282726;
-  height: 700px;
-  overflow: hidden; }
+  height: 1375px; }
+  #tonlistarmenn .art2 {
+    margin-top: 75px; }
   #tonlistarmenn .artist {
-    margin-top: 100px;
+    margin-top: 75px;
     padding-top: 25px;
     height: 550px;
     background: linear-gradient(125deg, #323130, #282726);
@@ -185,8 +195,20 @@ header nav {
         position: relative;
         right: 100px;
         height: 100%; }
+      #tonlistarmenn .artist .crop-mynd .chris img {
+        position: relative;
+        right: 85px;
+        height: 100%; }
+      #tonlistarmenn .artist .crop-mynd .carmack img {
+        position: relative;
+        right: 30px;
+        height: 100%; }
+      #tonlistarmenn .artist .crop-mynd .flava img {
+        position: relative;
+        right: 100px;
+        height: 100%; }
     #tonlistarmenn .artist .crop-mynd:hover {
-      transform: scale(1.04) rotate(6deg);
+      transform: scale(1.02) rotate(3deg);
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
     #tonlistarmenn .artist .texti {
       margin-top: 25px;
@@ -213,9 +235,11 @@ header nav {
     padding-bottom: 25px;
     height: 550px;
     background: linear-gradient(-45deg, #323130, #282726); }
-  #tonlistarmenn .texti {
-    margin-bottom: 40px;
-    text-align: center; }
+    #tonlistarmenn .ofugt-artist .texti {
+      margin-bottom: 40px;
+      text-align: left; }
+    #tonlistarmenn .ofugt-artist .texti-chris {
+      margin-bottom: 10px; }
 
 @keyframes nidur {
   from {
@@ -267,6 +291,12 @@ header nav {
       font-size: 300px; }
 
   #tonlistarmenn {
-    height: 950px; } }
+    height: 1800px; }
+    #tonlistarmenn .texti {
+      margin-top: 50px; }
+    #tonlistarmenn .artist {
+      margin-top: 150px; }
+    #tonlistarmenn .art2 {
+      margin-top: 200px; } }
 
 /*# sourceMappingURL=stilsida.css.map */
