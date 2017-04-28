@@ -18,11 +18,8 @@ $(window).scroll(function() {
   else if($(document).scrollTop() < 300){
     $('header').removeClass('hvitur-header');
   }
-  if ($(document).scrollTop() > 600) {
-    $('next-or').addClass('shrink');
-  } 
-  else if($(document).scrollTop() < 300){
-    $('next-or').removeClass('shrink');
+  if ($(document).scrollTop() > 2300) {
+    $('header').removeClass('hvitur-header');
   }
 });
 

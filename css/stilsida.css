@@ -240,6 +240,23 @@ header nav {
       text-align: left; }
     #tonlistarmenn .ofugt-artist .texti-chris {
       margin-bottom: 10px; }
+    #tonlistarmenn .ofugt-artist .texti-flava {
+      margin-bottom: 5px; }
+
+#upplysingar {
+  background: #F8F7F6;
+  height: 900px; }
+  #upplysingar .information {
+    margin-top: 75px;
+    padding-top: 75px; }
+    #upplysingar .information .texti {
+      margin-bottom: 40px;
+      text-align: left;
+      font-size: 100px; }
+  #upplysingar p {
+    color: #282726; }
+  #upplysingar li {
+    color: #282726; }
 
 @keyframes nidur {
   from {
@@ -291,7 +308,7 @@ header nav {
       font-size: 300px; }
 
   #tonlistarmenn {
-    height: 1800px; }
+    height: 1790px; }
     #tonlistarmenn .texti {
       margin-top: 50px; }
     #tonlistarmenn .artist {
