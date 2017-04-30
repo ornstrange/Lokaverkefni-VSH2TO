@@ -26,7 +26,7 @@ a:hover {
     color: #F8F7F6 !important; }
 
 .shrink {
-  height: 50px !important;
+  height: 7vh !important;
   transition: 0.5s; }
   .shrink #navbar .nav {
     margin-top: 0;
@@ -35,8 +35,8 @@ a:hover {
     margin-top: 0;
     transition: 0.5s; }
     .shrink .navbar-brand h1 {
-      font-size: 36px;
-      margin-top: -10px;
+      font-size: 3vw;
+      margin-top: -1.5vh;
       transition: margin-top .5s, font-size .5s, color 0s; }
 
 .hvitur-header .navbar-inverse {
@@ -60,17 +60,17 @@ header .navbar-inverse {
   border: 0;
   transition: .5s; }
 header nav {
-  height: 100px;
+  height: 14vh;
   transition: 0.5s; }
   header nav .navbar-brand {
-    margin-top: 10px;
+    margin-top: 1vh;
     transition: 0.5s; }
     header nav .navbar-brand h1 {
-      font-size: 48px;
+      font-size: 4vw;
       transition: margin-top .5s, font-size .5s, color 0s; }
   header nav #navbar {
     background: #282726;
-    font-size: 18px;
+    font-size: 1.5vw;
     transition: .5s; }
     header nav #navbar .nav {
       margin-top: 25px;
@@ -95,26 +95,25 @@ header nav {
 
 #land-page {
   background: #F8F7F6;
-  height: 700px;
-  overflow: hidden;
-  border: 1px solid black; }
+  height: 100vh;
+  overflow: hidden; }
   #land-page .or {
     position: fixed;
-    right: 15px;
-    bottom: 15px; }
+    right: 1vh;
+    bottom: 1vh; }
     #land-page .or img {
       transform: rotate(90deg);
       background: #282726;
-      padding: 5px;
-      border-radius: 5px; }
+      padding: 1vh;
+      border-radius: 1vh; }
   #land-page .container {
-    margin-top: 90px; }
+    margin-top: 14vh; }
   #land-page h1 {
-    margin-top: 100px;
-    font-size: 250px;
+    margin-top: 14vh;
+    font-size: 20vw;
     text-align: center;
     color: #282726;
-    line-height: 150px;
+    line-height: 20vh;
     overflow: visible; }
   #land-page .land-page-logo .char1, #land-page .land-page-logo .char2, #land-page .land-page-logo .char3, #land-page .land-page-logo .char4 {
     display: inline-block; }
@@ -167,11 +166,11 @@ header nav {
 
 #tonlistarmenn {
   background: #282726;
-  height: 1425px; }
+  height: 200vh; }
   #tonlistarmenn .art2 {
-    margin-top: 75px; }
+    margin-top: 7vh; }
   #tonlistarmenn .artist {
-    margin-top: 75px;
+    margin-top: 14vh;
     padding-top: 25px;
     height: 550px;
     background: linear-gradient(125deg, #323130, #282726);
@@ -241,24 +240,65 @@ header nav {
     #tonlistarmenn .ofugt-artist .texti-chris {
       margin-bottom: 10px; }
     #tonlistarmenn .ofugt-artist .texti-flava {
-      margin-bottom: 5px; }
+      margin-bottom: 2px; }
 
 #upplysingar {
   background: #F8F7F6;
-  height: 675px; }
-  #upplysingar #map {
-    height: 500px;
-    width: 100%; }
-  #upplysingar .information {
-    margin-top: 50px; }
-    #upplysingar .information p {
+  height: 200vh; }
+  #upplysingar .uppl {
+    margin-top: 14vh;
+    height: 86vh; }
+    #upplysingar .uppl p {
+      font-size: 1.2vw;
       color: #5c5a58; }
-    #upplysingar .information ul {
-      text-align: justify; }
-      #upplysingar .information ul li {
-        color: #5c5a58; }
-  #upplysingar .attendee {
-    margin-top: 50px; }
+    #upplysingar .uppl h1 {
+      font-size: 3.3vw;
+      margin-bottom: 2vh; }
+    #upplysingar .uppl #map {
+      height: 58vh;
+      width: 100%;
+      border: 1vh solid #F8F7F6; }
+    #upplysingar .uppl .kort {
+      background: #282726;
+      height: 72vh;
+      padding: 0;
+      padding-top: 2vh; }
+      #upplysingar .uppl .kort h1 {
+        color: #F8F7F6;
+        margin-left: 2vh; }
+      #upplysingar .uppl .kort p {
+        color: #A8A7A6;
+        margin-left: 2vh; }
+    #upplysingar .uppl .harpan {
+      background: #f4f2f0;
+      height: 72vh;
+      padding-top: 2vh; }
+    #upplysingar .uppl .about {
+      margin-top: 7vh; }
+  #upplysingar .uppl2 {
+    margin-top: 14vh;
+    height: 72vh;
+    overflow: hidden; }
+    #upplysingar .uppl2 .attendee {
+      background: #FCAB10;
+      height: 50vh;
+      padding-top: 3vh;
+      padding-left: 2vw; }
+    #upplysingar .uppl2 p {
+      font-size: 1.2vw;
+      color: #5c5a58; }
+    #upplysingar .uppl2 h1 {
+      font-size: 3.3vw;
+      margin-bottom: 2vh; }
+    #upplysingar .uppl2 .svartur {
+      background: #F8F7F6;
+      height: 50vh; }
+    #upplysingar .uppl2 .raudur {
+      background: #F8333C;
+      height: 22vh; }
+    #upplysingar .uppl2 .grar {
+      background: #F8F7F6;
+      height: 22vh; }
 
 @keyframes nidur {
   from {
@@ -302,28 +342,41 @@ header nav {
   to {
     opacity: 1;
     transform: none; } }
+/*
 @media screen and (min-width: 1680px) {
-  #land-page {
-    height: 955px; }
-    #land-page h1 {
-      margin-top: 175px;
-      font-size: 300px; }
+	#land-page {
+		height: 955px;
+		h1 {
+		margin-top: 175px;
+		font-size: 300px;
+		}
+	}
 
-  #tonlistarmenn {
-    height: 1805px; }
-    #tonlistarmenn .texti {
-      margin-top: 50px; }
-    #tonlistarmenn .artist {
-      margin-top: 150px; }
-    #tonlistarmenn .art2 {
-      margin-top: 200px; }
+	#tonlistarmenn {
+		height: 1805px;
+		.texti {
+			margin-top: 50px;
+		}
+		.artist {
+			margin-top: 150px;
+		}
+		.art2 {
+			margin-top: 200px;
+		}
+	}
 
-  #upplysingar {
-    background: #F8F7F6;
-    height: 955px; }
-    #upplysingar .information {
-      margin-top: 125px; }
-    #upplysingar .attendee {
-      margin-top: 50px; } }
+	// INFORMATION
+	#upplysingar {
+		background: $hvitur;
+		height: 955px;
+		.information {
+			margin-top: 125px;
+		}
+		.attendee {
+			margin-top: 50px;
+		}
+	}
+}
+*/
 
 /*# sourceMappingURL=stilsida.css.map */

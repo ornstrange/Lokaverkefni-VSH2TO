@@ -48,10 +48,7 @@ $(window).on("load",function() {
 $(function(){
   var $window = $(window);
 	var scrollTime = 2;
-	var scrollDistance = 700; // Hversu marga pixla músin skrollar
-	if($(window).height() > 800) {
-		scrollDistance = 900;
-	}
+	var scrollDistance = $(window).height(); // Hversu marga pixla músin skrollar
 	$window.on("mousewheel DOMMouseScroll", function(event){
 		event.preventDefault();
 		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;

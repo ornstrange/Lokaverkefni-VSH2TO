@@ -155,59 +155,69 @@
 	
 	<section id="upplysingar">
 		<div class="container">
-			<div class="col col-md-4">
-				<div class="information">
-					<h1>Location</h1>
-					<p>MONO is held in Harpa conference centre in reykjavík.</p>
-			    <div id="map"></div>
-				    <script>
-				      function initMap() {
-				        var uluru = {lat: 64.1503446, lng: -21.9323355};
-				        var map = new google.maps.Map(document.getElementById('map'), {
-				          zoom: 15,
-				          center: uluru
-				        });
-				        var marker = new google.maps.Marker({
-				          position: uluru,
-				          map: map
-				        });
-				      }
+			<div class="uppl">
+				<div class="row">
+					<div class="col col-md-5 harpan">
+						<div>
+							<h1>Harpa</h1>
+							<p>Harpa is a concert hall and conference centre in Reykjavík, Iceland and was designed by the Danish firm Henning Larsen Architects in co-operation with Danish-Icelandic artist Olafur Eliasson. The building was completed back in May 11, 2011. The structure consists of a steel framework clad with geometric shaped glass panels of different colours.</p>
+						</div>
+						<div class="about">
+							<h1>MONO</h1>
+							<p>MONO is an electronic music oriented festival taking place over the weekend of June 16–18 In the music hall Harpa. It was first held in june 2015 and included a limited but great lineup of artists from all over the world. <br>It has since become one of the most celebrated music festivals in Iceland. It has now reached the level of booking talented well known artists and selling out tickets months in advance. <b>schedule</b></p>
+						</div>
+					</div>
+					<div class="col col-md-7 kort">
+					<div>
+						<h1>Location</h1>
+						<p>MONO is held in Harpa conference centre in reykjavík.</p>
+				    <div id="map"></div>
+					    <script>
+					      function initMap() {
+					        var uluru = {lat: 64.1503446, lng: -21.9323355};
+					        var map = new google.maps.Map(document.getElementById('map'), {
+					          zoom: 15,
+					          center: uluru
+					        });
+					        var marker = new google.maps.Marker({
+					          position: uluru,
+					          map: map
+					        });
+					      }
+					    </script>
+				    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPnz5b7hPK8fbBqUmv6qiOI_b7qr6AmVU&callback=initMap">
 				    </script>
-			    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPnz5b7hPK8fbBqUmv6qiOI_b7qr6AmVU&callback=initMap">
-			    </script>
+					</div>
 				</div>
 			</div>
-			<div class="col col-md-4">
-				<div class="information">
-					<h1>Harpa</h1>
-					<p>Harpa is a concert hall and conference centre in Reykjavík, Iceland and was designed by the Danish firm Henning Larsen Architects in co-operation with Danish-Icelandic artist Olafur Eliasson. The building was completed back in May 11, 2011. The structure consists of a steel framework clad with geometric shaped glass panels of different colours.</p>
+		</div>
+		<div class="container">
+			<div class="uppl2">
+				<div class="row">
+					<div class="col col-md-7 attendee">
+						<h1>MONO Attendee Policy</h1>
+						<ul>
+							<li>No one under the age of 20 is permitted.</li>
+							<li>Photo ID is required. MONO Show Management or an MONO security officer may require attendees to show ID at any time.</li>
+							<li>All registration fees are nonrefundable.</li>
+							<li>Harassment is not acceptable. Cause for removal includes, but is not limited to:
+								<ul>
+									<li>Verbal harassment;</li>
+									<li>Intimidation or threats;</li>
+									<li>Physical violence;</li>
+									<li>Stalking; and/or</li>
+									<li>Sexually explicit, suggestive or provocative behavior</li>
+								</ul>
+							<li>If an attendee violates this policy, causes any disruption and/or violates any other MONO rules or policies, then MONO Show Management reserves the right to remove the attendee.</li>
+							</li>
+						</ul>
+					</div>
+					<div class="col col-md-5 svartur"></div>
 				</div>
-			</div>
-			<div class="col col-md-4">
-				<div class="information">
-					<h1>About MONO</h1>
-					<p>MONO is an electro music festival that takes place june 13-20. It was first held in june 2011, and has since become one of the largest music festival in Iceland. It now streches over a week and usually gets sold-out in minutes.</p>
-					<h3>Link hér með schedule?</h3>
+				<div class="row nedri">
+					<div class="col col-md-7 grar"></div>
+					<div class="col col-md-5 raudur"></div>
 				</div>
-			</div>
-			<div class="col col-md-6 offset-md-2">
-				<div class="information attendee">
-					<h1>MONO Attendee Policy</h1>
-					<ul>
-						<li>No one under the age of 20 is permitted.</li>
-						<li>Photo ID is required. MONO Show Management or an MONO security officer may require attendees to show ID at any time.</li>
-						<li>All registration fees are nonrefundable.</li>
-						<li>Harassment is not acceptable. Cause for removal includes, but is not limited to:
-							<ul>
-								<li>Verbal harassment;</li>
-								<li>Intimidation or threats;</li>
-								<li>Physical violence;</li>
-								<li>Stalking; and/or</li>
-								<li>Sexually explicit, suggestive or provocative behavior</li>
-							</ul>
-						<li>If an attendee violates this policy, causes any disruption and/or violates any other MONO rules or policies, then MONO Show Management reserves the right to remove the attendee.</li>
-						</li>
-					</ul>
 			</div>
 		</div>
 	</section>
