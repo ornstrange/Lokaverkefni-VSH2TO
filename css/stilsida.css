@@ -29,7 +29,7 @@ a:hover {
   height: 7vh !important;
   transition: 0.5s; }
   .shrink #navbar .nav {
-    margin-top: 0;
+    margin-top: 0vh;
     transition: 0.5s; }
   .shrink .navbar-brand {
     margin-top: 0;
@@ -73,7 +73,7 @@ header nav {
     font-size: 1.5vw;
     transition: .5s; }
     header nav #navbar .nav {
-      margin-top: 25px;
+      margin-top: 4vh;
       transition: 0.5s; }
       header nav #navbar .nav li a {
         padding: 0;
@@ -168,16 +168,17 @@ header nav {
   background: #282726;
   height: 200vh; }
   #tonlistarmenn .art2 {
-    margin-top: 7vh; }
+    margin-top: 14vh; }
   #tonlistarmenn .artist {
     margin-top: 14vh;
-    padding-top: 25px;
-    height: 550px;
+    padding-top: 2vh;
+    height: 72vh;
     background: linear-gradient(125deg, #323130, #282726);
-    border-radius: 325px 325px 25px 25px; }
+    border-radius: 325px 325px 25px 25px;
+    width: 24vw; }
     #tonlistarmenn .artist .crop-mynd {
-      width: 300px;
-      height: 300px;
+      width: 20vw;
+      height: 20vw;
       border-radius: 50%;
       overflow: hidden;
       margin: 0 auto;
@@ -192,7 +193,7 @@ header nav {
         height: 100%; }
       #tonlistarmenn .artist .crop-mynd .goldlink img {
         position: relative;
-        right: 100px;
+        right: 4vw;
         height: 100%; }
       #tonlistarmenn .artist .crop-mynd .chris img {
         position: relative;
@@ -210,15 +211,15 @@ header nav {
       transform: scale(1.02) rotate(3deg);
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
     #tonlistarmenn .artist .texti {
-      margin-top: 25px;
-      padding: 10px;
+      margin-top: 5vh;
+      padding: 1vw;
       text-align: left; }
       #tonlistarmenn .artist .texti h1 {
         color: #F8F7F6;
         font-weight: bolder;
-        font-size: 32px;
+        font-size: 3vw;
         letter-spacing: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 2vh;
         text-align: right;
         transition: .4s ease-in-out; }
       #tonlistarmenn .artist .texti h1:hover {
@@ -226,21 +227,23 @@ header nav {
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); }
       #tonlistarmenn .artist .texti p {
         color: #A8A7A6;
-        font-size: 16px;
+        font-size: 1.1vw;
         font-weight: lighter; }
+    #tonlistarmenn .artist .texti-carmack {
+      margin-top: 0; }
   #tonlistarmenn .ofugt-artist {
     border-radius: 25px 25px 325px 325px;
     padding-top: 0;
-    padding-bottom: 25px;
-    height: 550px;
+    padding-bottom: 4vh;
+    height: 72vh;
     background: linear-gradient(-45deg, #323130, #282726); }
     #tonlistarmenn .ofugt-artist .texti {
-      margin-bottom: 40px;
+      margin-bottom: 4vh;
       text-align: left; }
     #tonlistarmenn .ofugt-artist .texti-chris {
-      margin-bottom: 10px; }
+      margin-bottom: 1vh; }
     #tonlistarmenn .ofugt-artist .texti-flava {
-      margin-bottom: 2px; }
+      margin-bottom: 1.5vh; }
 
 #upplysingar {
   background: #F8F7F6;
@@ -249,10 +252,10 @@ header nav {
     margin-top: 14vh;
     height: 86vh; }
     #upplysingar .uppl p {
-      font-size: 1.2vw;
+      font-size: 1vw;
       color: #5c5a58; }
     #upplysingar .uppl h1 {
-      font-size: 3.3vw;
+      font-size: 3.5vw;
       margin-bottom: 2vh; }
     #upplysingar .uppl #map {
       height: 58vh;
@@ -342,41 +345,100 @@ header nav {
   to {
     opacity: 1;
     transform: none; } }
-/*
 @media screen and (min-width: 1680px) {
-	#land-page {
-		height: 955px;
-		h1 {
-		margin-top: 175px;
-		font-size: 300px;
-		}
-	}
+  .shrink {
+    height: 7vh !important;
+    transition: 0.5s; }
+    .shrink #navbar .nav {
+      margin-top: 1vh;
+      transition: 0.5s; }
+    .shrink .navbar-brand {
+      margin-top: 0;
+      transition: 0.5s; }
+      .shrink .navbar-brand h1 {
+        font-size: 3vw;
+        margin-top: -1vh;
+        transition: margin-top .5s, font-size .5s, color 0s; }
 
-	#tonlistarmenn {
-		height: 1805px;
-		.texti {
-			margin-top: 50px;
-		}
-		.artist {
-			margin-top: 150px;
-		}
-		.art2 {
-			margin-top: 200px;
-		}
-	}
-
-	// INFORMATION
-	#upplysingar {
-		background: $hvitur;
-		height: 955px;
-		.information {
-			margin-top: 125px;
-		}
-		.attendee {
-			margin-top: 50px;
-		}
-	}
-}
-*/
+  #tonlistarmenn {
+    background: #282726;
+    height: 200vh; }
+    #tonlistarmenn .art2 {
+      margin-top: 14vh; }
+    #tonlistarmenn .artist {
+      margin-top: 14vh;
+      padding-top: 1vh;
+      height: 72vh;
+      background: linear-gradient(125deg, #323130, #282726);
+      border-radius: 325px 325px 25px 25px;
+      width: 22vw; }
+      #tonlistarmenn .artist .crop-mynd {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        transition: .4s ease-in-out; }
+        #tonlistarmenn .artist .crop-mynd .kiasmos img {
+          position: relative;
+          right: 85px;
+          height: 100%; }
+        #tonlistarmenn .artist .crop-mynd .kolombo img {
+          position: relative;
+          right: 30px;
+          height: 100%; }
+        #tonlistarmenn .artist .crop-mynd .goldlink img {
+          position: relative;
+          right: 4vw;
+          height: 100%; }
+        #tonlistarmenn .artist .crop-mynd .chris img {
+          position: relative;
+          right: 85px;
+          height: 100%; }
+        #tonlistarmenn .artist .crop-mynd .carmack img {
+          position: relative;
+          right: 30px;
+          height: 100%; }
+        #tonlistarmenn .artist .crop-mynd .flava img {
+          position: relative;
+          right: 100px;
+          height: 100%; }
+      #tonlistarmenn .artist .crop-mynd:hover {
+        transform: scale(1.02) rotate(3deg);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+      #tonlistarmenn .artist .texti {
+        margin-top: 5vh;
+        padding: 1vw;
+        text-align: left; }
+        #tonlistarmenn .artist .texti h1 {
+          color: #F8F7F6;
+          font-weight: bolder;
+          font-size: 3vw;
+          letter-spacing: 5px;
+          margin-bottom: 2vh;
+          text-align: right;
+          transition: .4s ease-in-out; }
+        #tonlistarmenn .artist .texti h1:hover {
+          color: #FCAB10;
+          text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); }
+        #tonlistarmenn .artist .texti p {
+          color: #A8A7A6;
+          font-size: 1.1vw;
+          font-weight: lighter; }
+      #tonlistarmenn .artist .texti-carmack {
+        margin-top: 2vh; }
+    #tonlistarmenn .ofugt-artist {
+      border-radius: 25px 25px 325px 325px;
+      padding-top: 0;
+      padding-bottom: 4vh;
+      height: 72vh;
+      background: linear-gradient(-45deg, #323130, #282726); }
+      #tonlistarmenn .ofugt-artist .texti {
+        margin-bottom: 4vh;
+        text-align: left; }
+      #tonlistarmenn .ofugt-artist .texti-chris {
+        margin-bottom: 1vh; }
+      #tonlistarmenn .ofugt-artist .texti-flava {
+        margin-bottom: 1.5vh; } }
 
 /*# sourceMappingURL=stilsida.css.map */

@@ -68,7 +68,7 @@ a:hover {
 	@include trans(.5s);
 	#navbar {
 		.nav {
-			margin-top: 0;
+			margin-top: 0vh;
 			@include trans(.5s);
 		}
 	}
@@ -140,7 +140,7 @@ header {
 			font-size: 1.5vw;
 			transition: .5s;
 			.nav {
-				margin-top: 25px;
+				margin-top: 4vh;
 				@include trans(.5s);
 				li {
 					a {
@@ -241,17 +241,18 @@ header {
 	background: $svartur;
 	height: 200vh;
 	.art2 {
-		margin-top:7vh;
+		margin-top:14vh;
 	}
 	.artist {
 		margin-top: 14vh;
-		padding-top: 25px;
-		height: 550px;
+		padding-top: 2vh;
+		height: 72vh;
 		background: linear-gradient(125deg, lighten($svartur, 4%), $svartur);
 		border-radius: 325px 325px 25px 25px;
+		width: 24vw;
 		.crop-mynd {
-			width: 300px;
-			height: 300px;
+			width: 20vw;
+			height: 20vw;
 			border-radius: 50%;
 			overflow: hidden;
 			margin: 0 auto;
@@ -273,7 +274,7 @@ header {
 			.goldlink {
 				img {
 					position: relative;
-					right: 100px;
+					right: 4vw;
 					height: 100%;
 				}
 			}
@@ -304,15 +305,15 @@ header {
 			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 		}
 		.texti {
-			margin-top: 25px;
-			padding: 10px;
+			margin-top: 5vh;
+			padding: 1vw;
 			text-align: left;
 			h1 {
 				color: $hvitur;
 				font-weight: bolder;
-				font-size: 32px;
+				font-size: 3vw;
 				letter-spacing: 5px;
-				margin-bottom: 10px;
+				margin-bottom: 2vh;
 				text-align: right;
 				transition: .4s ease-in-out;
 			}
@@ -322,26 +323,29 @@ header {
 			}
 			p {
 				color: $grar;
-				font-size: 16px;
+				font-size: 1.1vw;
 				font-weight: lighter;
 			}
+		}
+		.texti-carmack {
+			margin-top: 0;
 		}
 	}
 	.ofugt-artist {
 		border-radius: 25px 25px 325px 325px;
 		padding-top: 0;
-		padding-bottom: 25px;
-		height: 550px;
+		padding-bottom: 4vh;
+		height: 72vh;
 		background: linear-gradient(-45deg, lighten($svartur, 4%), $svartur);
 		.texti {
-			margin-bottom: 40px;
+			margin-bottom: 4vh;
 			text-align: left;
 		}
 		.texti-chris {
-			margin-bottom: 10px;
+			margin-bottom: 1vh;
 		}
 		.texti-flava {
-			margin-bottom: 2px;
+			margin-bottom: 1.5vh;
 		}
 	}
 }
@@ -354,11 +358,11 @@ header {
 		margin-top: 14vh;
 		height: 86vh;
 		p {
-			font-size: 1.2vw;
+			font-size: 1vw;
 			color: lighten($svartur, 20%);
 		}
 		h1 {
-			font-size: 3.3vw;
+			font-size: 3.5vw;
 			margin-bottom: 2vh;
 		}
 		#map {
@@ -497,39 +501,137 @@ header {
 }
 
 // MEDIA QUERIES
-/*
 @media screen and (min-width: 1680px) {
-	#land-page {
-		height: 955px;
-		h1 {
-		margin-top: 175px;
-		font-size: 300px;
+	.shrink {
+		height: 7vh !important;
+		@include trans(.5s);
+		#navbar {
+			.nav {
+				margin-top: 1vh;
+				@include trans(.5s);
+			}
+		}
+		.navbar-brand {
+			margin-top: 0;
+			@include trans(.5s);
+			h1 {
+				font-size: 3vw;
+				margin-top: -1vh;
+				transition: margin-top .5s, font-size .5s, color 0s;
+			}
 		}
 	}
 
 	#tonlistarmenn {
-		height: 1805px;
+	background: $svartur;
+	height: 200vh;
+	.art2 {
+		margin-top:14vh;
+	}
+	.artist {
+		margin-top: 14vh;
+		padding-top: 1vh;
+		height: 72vh;
+		background: linear-gradient(125deg, lighten($svartur, 4%), $svartur);
+		border-radius: 325px 325px 25px 25px;
+		width: 22vw;
+		.crop-mynd {
+			width: 20vw;
+			height: 20vw;
+			border-radius: 50%;
+			overflow: hidden;
+			margin: 0 auto;
+			transition: .4s ease-in-out;
+			.kiasmos {
+				img {
+					position: relative;
+					right: 85px;
+					height: 100%;
+				}
+			}
+			.kolombo {
+				img {
+					position: relative;
+					right: 30px;
+					height: 100%;
+				}
+			}
+			.goldlink {
+				img {
+					position: relative;
+					right: 4vw;
+					height: 100%;
+				}
+			}
+			.chris {
+				img {
+					position: relative;
+					right: 85px;
+					height: 100%;
+				}
+			}
+			.carmack {
+				img {
+					position: relative;
+					right: 30px;
+					height: 100%;
+				}
+			}
+			.flava {
+				img {
+					position: relative;
+					right: 100px;
+					height: 100%;
+				}
+			}
+		}
+		.crop-mynd:hover {
+			transform: scale(1.02) rotate(3deg);
+			box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+		}
 		.texti {
-			margin-top: 50px;
+			margin-top: 5vh;
+			padding: 1vw;
+			text-align: left;
+			h1 {
+				color: $hvitur;
+				font-weight: bolder;
+				font-size: 3vw;
+				letter-spacing: 5px;
+				margin-bottom: 2vh;
+				text-align: right;
+				transition: .4s ease-in-out;
+			}
+			h1:hover {
+				color: $gulur;
+				text-shadow: 0px 0px 5px rgba(0,0,0,.3);
+			}
+			p {
+				color: $grar;
+				font-size: 1.1vw;
+				font-weight: lighter;
+			}
 		}
-		.artist {
-			margin-top: 150px;
-		}
-		.art2 {
-			margin-top: 200px;
+		.texti-carmack {
+			margin-top: 2vh;
 		}
 	}
-
-	// INFORMATION
-	#upplysingar {
-		background: $hvitur;
-		height: 955px;
-		.information {
-			margin-top: 125px;
+	.ofugt-artist {
+		border-radius: 25px 25px 325px 325px;
+		padding-top: 0;
+		padding-bottom: 4vh;
+		height: 72vh;
+		background: linear-gradient(-45deg, lighten($svartur, 4%), $svartur);
+		.texti {
+			margin-bottom: 4vh;
+			text-align: left;
 		}
-		.attendee {
-			margin-top: 50px;
+		.texti-chris {
+			margin-bottom: 1vh;
+		}
+		.texti-flava {
+			margin-bottom: 1.5vh;
 		}
 	}
 }
-*/
+}
