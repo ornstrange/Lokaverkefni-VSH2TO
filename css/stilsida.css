@@ -99,13 +99,18 @@ header nav {
   overflow: hidden; }
   #land-page .or {
     position: fixed;
-    right: 1vh;
-    bottom: 1vh; }
-    #land-page .or img {
-      transform: rotate(90deg);
-      background: #282726;
+    right: 2vh;
+    bottom: 2vh; }
+    #land-page .or i {
+      background: #F8F7F6;
+      color: #282726;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       padding: 1vh;
       border-radius: 1vh; }
+    #land-page .or i:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      transform: scale(1.1); }
   #land-page .container {
     margin-top: 14vh; }
   #land-page h1 {
@@ -260,12 +265,14 @@ header nav {
     #upplysingar .uppl #map {
       height: 58vh;
       width: 100%;
-      border: 1vh solid #F8F7F6; }
+      border: 1vh solid #F8F7F6;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
     #upplysingar .uppl .kort {
       background: #282726;
       height: 72vh;
       padding: 0;
-      padding-top: 2vh; }
+      padding-top: 2vh;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
       #upplysingar .uppl .kort h1 {
         color: #F8F7F6;
         margin-left: 2vh; }
@@ -275,7 +282,8 @@ header nav {
     #upplysingar .uppl .harpan {
       background: #f4f2f0;
       height: 72vh;
-      padding-top: 2vh; }
+      padding-top: 2vh;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
     #upplysingar .uppl .about {
       margin-top: 7vh; }
   #upplysingar .uppl2 {
@@ -284,6 +292,7 @@ header nav {
     overflow: hidden; }
     #upplysingar .uppl2 .attendee {
       background: #FCAB10;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       height: 50vh;
       padding-top: 3vh;
       padding-left: 2vw; }
@@ -293,15 +302,33 @@ header nav {
     #upplysingar .uppl2 h1 {
       font-size: 3.3vw;
       margin-bottom: 2vh; }
-    #upplysingar .uppl2 .svartur {
-      background: #F8F7F6;
-      height: 50vh; }
     #upplysingar .uppl2 .raudur {
       background: #F8333C;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       height: 22vh; }
-    #upplysingar .uppl2 .grar {
-      background: #F8F7F6;
-      height: 22vh; }
+
+#form {
+  height: 100vh;
+  background: #F8F7F6; }
+  #form .container {
+    padding-top: 14vh; }
+    #form .container .row {
+      margin-top: 6vh; }
+      #form .container .row .col {
+        height: 64vh;
+        padding: 2vh; }
+        #form .container .row .col .texti {
+          background: #F8F7F6;
+          height: 100%;
+          border-bottom-left-radius: 10vw;
+          border-bottom-right-radius: 10vw;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+          #form .container .row .col .texti h3 {
+            background: #282726;
+            color: #F8F7F6;
+            padding-top: .5vh;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            height: 4vh; }
 
 @keyframes nidur {
   from {

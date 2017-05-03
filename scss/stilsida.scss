@@ -1,5 +1,4 @@
 // IMPORTS
-
 @import url("../auka/bootstrap/css/bootstrap.min.css");
 @import url("../auka/font-awesome/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
@@ -176,13 +175,19 @@ header {
 	overflow: hidden;
 	.or {
 		position: fixed;
-		right: 1vh;
-		bottom: 1vh;
-		img {
-			transform: rotate(90deg);
-			background: $svartur;
+		right: 2vh;
+		bottom: 2vh;
+		i {
+			background: $hvitur;
+			color: $svartur;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 			padding: 1vh;
 			border-radius: 1vh;
+		}
+		i:hover {
+		  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		  transform: scale(1.1);
 		}
 	}
 	.container {
@@ -369,12 +374,14 @@ header {
 			height: 58vh;
 			width: 100%;
 			border: 1vh solid $hvitur;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 		}
 		.kort {
 			background: $svartur;
 			height: 72vh;
 			padding: 0;
 			padding-top: 2vh;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 			h1 {
 				color: $hvitur;
 				margin-left: 2vh;
@@ -388,6 +395,7 @@ header {
 			background: darken($hvitur, 2%);
 			height: 72vh;
 			padding-top: 2vh;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 		}
 		.about {
 			margin-top: 7vh;
@@ -399,6 +407,7 @@ header {
 		overflow: hidden;
 		.attendee {
 			background: $gulur;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 			height: 50vh;
 			padding-top: 3vh;
 			padding-left: 2vw;
@@ -411,17 +420,39 @@ header {
 			font-size: 3.3vw;
 			margin-bottom: 2vh;
 		}
-		.svartur {
-			background: $hvitur;
-			height: 50vh;
-		}
 		.raudur {
 			background: $raudur;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 			height: 22vh;
 		}
-		.grar {
-			background: $hvitur;
-			height: 22vh;
+	}
+}
+
+#form {
+	height: 100vh;
+	background: $hvitur;
+	.container {
+		padding-top: 14vh;
+		.row {
+			margin-top: 6vh;
+			.col {
+				height: 64vh;
+				padding: 2vh;
+				.texti {
+					background: $hvitur;
+					height: 100%;
+					border-bottom-left-radius: 10vw;
+					border-bottom-right-radius: 10vw;
+					box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+					h3 {
+						background: $svartur;
+						color: $hvitur;
+						padding-top: .5vh;
+						box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+						height: 4vh;
+					}
+				}
+			}
 		}
 	}
 }

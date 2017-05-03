@@ -17,7 +17,6 @@
 	<script src="js/javascript.js"></script>
 </head>
 <body>
-	<div class="fakeheader"></div>
 	<header id="header">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -50,7 +49,7 @@
 			<h1 class="land-page-logo2">MONO</h1>
 		</div>
 		<div class="or">
-			<img id="next-or" src="img/ui/next.svg">
+			<i id="next-or" class="fa fa-arrow-down" aria-hidden="true"></i>
 		</div>
 	</section>
 	
@@ -215,10 +214,9 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col col-md-5 svartur"></div>
 				</div>
 				<div class="row nedri">
-					<div class="col col-md-7 grar"></div>
+					<div class="col col-md-7"></div>
 					<div class="col col-md-5 raudur"></div>
 				</div>
 			</div>
@@ -226,11 +224,27 @@
 	</section>
 	
 	<section id="form">
-		
+		<div class="container">
+		  <div class="text-center">
+		    <h1>TICKETS AVAILABLE!</h1>
+		  </div>
+		  <div class="row">
+		    <div class="col col-sm-4">
+		    	<div class="texti"><h3 class="text-center">One day pass</h3></div>
+		    </div>
+		    <div class="col col-sm-4">
+		    	<div class="texti"><h3 class="text-center">Three day pass</h3></div>
+		    </div>
+		    <div class="col col-sm-4">
+		    	<div class="texti"><h3 class="text-center">VIP pass</h3></div>
+		    </div>
+		  </div>
+		</div>
 	</section>
 
 	<footer>
 		<div class="sponsors"></div>
 	</footer>
+	<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
