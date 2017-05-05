@@ -362,6 +362,37 @@ header nav {
         background: radial-gradient(#fcb429, #FCAB10);
         color: #F8F7F6; }
 
+#store {
+  height: 100vh;
+  background: #F8F7F6; }
+  #store .container {
+    padding-top: 14vh; }
+    #store .container .row {
+      margin-top: 6vh; }
+      #store .container .row .col {
+        padding: 1vh; }
+        #store .container .row .col .texti {
+          background: linear-gradient(#F8F7F6, #e2ded9);
+          height: 100%;
+          box-shadow: 0 5px 3px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.21); }
+          #store .container .row .col .texti h3 {
+            background: #282726;
+            color: #F8F7F6;
+            padding-top: .5vh;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            height: 4vh; }
+          #store .container .row .col .texti p {
+            margin: 15px; }
+        #store .container .row .col .col-md-12 {
+          height: 16vh; }
+
+.storep {
+  font-size: 1.5em; }
+
+.storep1 {
+  width: 100%;
+  height: 100%; }
+
 @keyframes nidur {
   from {
     opacity: 0;
