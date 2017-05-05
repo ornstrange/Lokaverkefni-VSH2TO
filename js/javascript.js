@@ -44,7 +44,8 @@ $(window).on("load",function() {
   }).scroll(); //invoke scroll-handler on page-load
 });
 
-// SMOOTH SCROLL MÚS
+// SMOOTH SCROLL MÚS 
+/*
 $(function(){
   var $window = $(window);
 	var scrollTime = 2;
@@ -71,3 +72,4 @@ $(function(){
     });
   });
 });
+*/

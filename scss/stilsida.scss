@@ -37,13 +37,17 @@ $graenn: #44AF69;
 
 // GLOBAL
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 body {
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -moz-font-feature-settings: "liga" on;
   font-family: 'Open Sans', sans-serif;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 h1, h2, h3 {
@@ -112,6 +116,14 @@ a:hover {
 
 .fade {
 	opacity: 1;
+}
+
+.subscribe-takki {
+	color: $svartur;
+}
+.subscribe-takki:hover {
+	background: $gulur;
+	color: $hvitur;
 }
 
 // STYLES
@@ -436,14 +448,12 @@ header {
 		.row {
 			margin-top: 6vh;
 			.col {
-				height: 64vh;
-				padding: 2vh;
+				height: 18vh;
+				padding: 1vh;
 				.texti {
-					background: $hvitur;
+					background: linear-gradient($hvitur, darken($hvitur, 10%));
 					height: 100%;
-					border-bottom-left-radius: 10vw;
-					border-bottom-right-radius: 10vw;
-					box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+					box-shadow: 0 5px 3px rgba(0,0,0,0.13), 0 6px 6px rgba(0,0,0,0.21);
 					h3 {
 						background: $svartur;
 						color: $hvitur;
@@ -451,7 +461,37 @@ header {
 						box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 						height: 4vh;
 					}
+					p {
+						margin: 15px;
+					}
 				}
+			}
+			.col-md-12 {
+				height: 16vh;
+			}
+			.takki {
+				width: 16vw;
+				height: 16vw;
+				border-radius: 50%;
+				margin: 0 auto;
+				margin-top: 1.5vw;
+				background: $gulur;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				color: $hvitur;
+				cursor: pointer;
+				p {
+					position: absolute;
+					margin: 0 2vw;
+					margin-top: 6vw;
+					font-size: 1.3vw;
+				}
+			}
+			.takki:hover {
+				box-shadow: 0 15px 20px rgba(0,0,0,0.13), 0 6px 6px rgba(0,0,0,0.21);
+				transform: scale(1.1) rotate(4deg);
+				background: radial-gradient(lighten($gulur, 5%), $gulur);
+				color: $hvitur;
 			}
 		}
 	}
