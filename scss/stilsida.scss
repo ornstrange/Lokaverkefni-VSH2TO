@@ -560,7 +560,7 @@ header {
 	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
 	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
-	background-color:#599bb3;
+	background-color:#282726;
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	border-radius:8px;
@@ -570,7 +570,7 @@ header {
 	font-family:Arial;
 	font-size:20px;
 	font-weight:bold;
-	padding:13px 32px;
+	padding:12px 30px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d768a;
 }
@@ -800,3 +800,17 @@ header {
 }
 }
 
+// BREAKPOINTS
+
+@media screen and (min-width: 37.5em){
+	
+}
+@media screen and (min-width: 48em) {
+    
+}
+@media screen and (min-width: 60em){
+    
+}
+@media screen and (min-width: 64em){
+
+}
