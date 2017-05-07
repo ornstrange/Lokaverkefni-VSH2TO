@@ -6,6 +6,8 @@
   <meta name="author" content="Örn Óli Strange, Elmar Ólafsson, Sigfús Már Viðarsson">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/stilsida.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<title>Lokaverkefni VSH2</title>
 	<!-- JAVASCRIPT -->
 	<script src="auka/jquery/dist/jquery.min.js"></script>
@@ -300,8 +302,8 @@
 		    		<div class="texti">
 		    			<h3 class="text-center">Tshirts</h3>
 		    			<img class="storep1" src="img\store\ttshirt.png">
-		    			<p>39$<br>S/M/L</p>
-		    			<a class="buystore">Buy Now!</a>
+		    			<p>38.99$<br>S/M/L</p>
+		    			<a href="#0" class="cd-add-to-cart" data-price="38.99">Add To Cart</a>
 		    		</div>
 		    	</div>
 		    	<div class="col col-md-6">
@@ -309,7 +311,7 @@
 		    			<h3 class="text-center">Snapback</h3>
 		    			<img class="hat1" src="img\store\hat.png">
 		    			<p>41.99$<br>Resizeable adjustmend on the back</p>
-		    			<a class="buystore">Buy Now!</a>
+		    			<a href="#0" class="cd-add-to-cart" data-price="41.99">Add To Cart</a>
 		    		</div>
 		    	</div>
 		    	<div class="col col-md-6">
@@ -317,7 +319,7 @@
 		    			<h3 class="text-center">Hoodie</h3>
 		    			<img class="hoodie1" src="img\store\hoodie2.png">
 		    			<p>75.99$<br>S/M/L</p>
-		    			<a  class="buystore">Buy Now!</a>
+		    			<a href="#0" class="cd-add-to-cart" data-price="75.99">Add To Cart</a>
 		    		</div>
 		    	</div>
 		    	<div class="col col-md-6">
@@ -325,7 +327,7 @@
 		    			<h3 class="text-center">Hoodie</h3>
 		    			<img class="hoodie2" src="img\store\hoodie.png">
 		    			<p>59.99$<br>S/M/L</p>
-		    			<a class="buystore">Buy Now!</a>
+		    			<a href="#0" class="cd-add-to-cart" data-price="59.99">Add To Cart</a>
 		    		</div>
 		    	</div>
 		    	<div class="col col-md-12">
@@ -342,10 +344,37 @@
 		</div> 
 
 	</section>
+	<div class="cd-cart-container empty">
+	<a href="#0" class="cd-cart-trigger">
+		Cart
+		<ul class="count"> <!-- cart items count -->
+			<li>0</li>
+			<li>0</li>
+		</ul> <!-- .count -->
+	</a>
+	<div class="cd-cart">
+		<div class="wrapper">
+			<header>
+				<h2>Cart</h2>
+				<span class="undo">Item removed. <a href="#0">Undo</a></span>
+			</header>
+			
+			<div class="body">
+				<ul>
+					<!-- products added to the cart will be inserted here using JavaScript -->
+				</ul>
+			</div>
 
 	<footer>
+		<a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+		
 		<div class="sponsors"></div>
 	</footer>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+		if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+	</script>
+	<script src="js/main.js"></script>
 </body>
 </html>
