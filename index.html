@@ -6,23 +6,20 @@
   <meta name="author" content="Örn Óli Strange, Elmar Ólafsson, Sigfús Már Viðarsson">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/stilsida.css">
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<title>Lokaverkefni VSH2</title>
+	<title>MONO</title>
 	<!-- JAVASCRIPT -->
 	<script src="auka/jquery/dist/jquery.min.js"></script>
 	<script src="auka/smooth-scroll/dist/js/smooth-scroll.js"></script>
 	<script src="auka/bootstrap/js/bootstrap.min.js"></script>
 	<script src="auka/lettering/jquery.lettering-0.6.1.min.js"></script>
-	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>-->
 	<script src="js/javascript.js"></script>
 </head>
 <body>
+	<p class="tolva">Enginn símastuðningur vegna tímaskorts...</p>
 	<header id="header">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-    		<a class="navbar-right" href="isl.html">IS/EN</a>
+    		<a class="navbar-right is-en-skipti" href="isl.html">IS/EN</a>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -38,11 +35,9 @@
             <li><a data-scroll href="#tonlistarmenn">ARTISTS</a></li>
             <li><a data-scroll href="#upplysingar">INFORMATION</a></li>
             <li><a data-scroll href="#form">GET TICKETS</a></li>
-            <li><a data-scroll href="#store">STORE</a></li>
-
+            <!--<li><a data-scroll href="#store">STORE</a></li>-->
           </ul>
         </div>
-        
       </div>
     </nav>
 	</header>
@@ -52,20 +47,16 @@
 			<h1 class="land-page-logo">MONO</h1>
 			<h1 class="land-page-logo2">MONO</h1>
 		</div>
-		<!--<div class="or">
-			<i id="next-or" class="fa fa-arrow-down" aria-hidden="true"></i>
-		</div>-->
 	</section>
 	
 	<section id="tonlistarmenn">
 		<div class="container">
 			<div class="artistar">
 				<div class="row fade art1">
-					<div class="col col-md-4">
+					<div class="col col-sm-4">
 						<div class="artist">
 							<div class="crop-mynd">
 								<picture class="kiasmos">
-									<source media="(max-width: 768px)" srcset="img/artists/kiasmos_small.jpg">
 			  					<img src="img/artists/kiasmos.jpg">
 								</picture>
 							</div>
@@ -77,7 +68,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col col-md-4">
+					<div class="col col-sm-4">
 						<div class="artist ofugt-artist">
 							<div class="texti">
 								<h1>KOLOMBO</h1>
@@ -87,17 +78,15 @@
 							</div>
 							<div class="crop-mynd">
 								<picture class="kolombo">
-									<source media="(max-width: 768px)" srcset="img/artists/kolombo_small.jpg">
 			  					<img src="img/artists/kolombo.jpg">
 								</picture>
 							</div>
 						</div>
 					</div>
-					<div class="col col-md-4">
+					<div class="col col-sm-4">
 						<div class="artist">
 							<div class="crop-mynd">
 								<picture class="goldlink">
-									<source media="(max-width: 768px)" srcset="img/artists/goldlink_small.jpg">
 			  					<img src="img/artists/goldlink.jpg">
 								</picture>
 							</div>
@@ -110,7 +99,7 @@
 					</div>
 				</div>
 				<div class="row fade art2">
-					<div class="col col-md-4">
+					<div class="col col-sm-4">
 						<div class="artist ofugt-artist">
 							<div class="texti texti-chris">
 								<h1>CHRIS MALINCHAK</h1>
@@ -119,17 +108,15 @@
 							</div>
 							<div class="crop-mynd">
 								<picture class="chris">
-									<source media="(max-width: 768px)" srcset="img/artists/chris_small.jpg">
 			  					<img src="img/artists/chris.jpg">
 								</picture>
 							</div>
 						</div>
 					</div>
-					<div class="col col-md-4">
+					<div class="col col-sm-4">
 						<div class="artist">
 							<div class="crop-mynd">
 								<picture class="carmack">
-									<source media="(max-width: 768px)" srcset="img/artists/carmack_small.jpg">
 			  					<img src="img/artists/carmack.jpg">
 								</picture>
 							</div>
@@ -139,7 +126,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col col-md-4">
+					<div class="col col-sm-4">
 						<div class="artist ofugt-artist">
 							<div class="texti texti-flava">
 								<h1>FLAVA D</h1>
@@ -148,7 +135,6 @@
 							</div>
 							<div class="crop-mynd">
 								<picture class="flava">
-									<source media="(max-width: 768px)" srcset="img/artists/flava_small.jpg">
 			  					<img src="img/artists/flava.jpg">
 								</picture>
 							</div>
@@ -163,7 +149,7 @@
 		<div class="container">
 			<div class="uppl">
 				<div class="row">
-					<div class="col col-md-5 harpan">
+					<div class="col col-sm-5 harpan">
 						<div>
 							<h1>Harpa</h1>
 							<p>Harpa is a concert hall and conference centre in Reykjavík, Iceland and was designed by the Danish firm Henning Larsen Architects in co-operation with Danish-Icelandic artist Olafur Eliasson. The building was completed back in May 11, 2011. The structure consists of a steel framework clad with geometric shaped glass panels of different colours.</p>
@@ -173,7 +159,7 @@
 							<p>MONO is an electronic music oriented festival taking place over the weekend of June 16–18 2017 In the music hall Harpa. It was first held in june 2015 and included a limited but great lineup of artists from all over the world. <br>It has since become one of the most celebrated music festivals in Iceland. It has now reached the level of booking talented well known artists and selling out tickets months in advance. <b>schedule</b></p>
 						</div>
 					</div>
-					<div class="col col-md-7 kort">
+					<div class="col col-sm-7 kort">
 					<div>
 						<h1>Location</h1>
 						<p>MONO is held in Harpa conference centre in reykjavík.</p>
@@ -200,7 +186,7 @@
 		<div class="container">
 			<div class="uppl2">
 				<div class="row">
-					<div class="col col-md-7 attendee">
+					<div class="col col-sm-7 attendee">
 						<h1>MONO Attendee Policy</h1>
 						<ul>
 							<li>No one under the age of 20 is permitted.</li>
@@ -220,8 +206,8 @@
 					</div>
 				</div>
 				<div class="row nedri">
-					<div class="col col-md-7"></div>
-					<div class="col col-md-5 raudur"></div>
+					<div class="col col-sm-7"></div>
+					<div class="col col-sm-5 raudur"></div>
 				</div>
 			</div>
 		</div>
@@ -233,25 +219,25 @@
 		    <h1>TICKETS AVAILABLE</h1>
 		  </div>
 		  <div class="row">
-		    <div class="col col-md-6">
+		    <div class="col col-sm-6">
 		    	<div class="texti">
 		    		<h3 class="text-center">One day pass</h3>
 		    		<p>With access to the MONO 2017 venues for one day of the festival weekend, grants access to all bars exept special VIP bars, this is our one-day ticket to an incredible music experience.</p>
 		    	</div>
 		    </div>
-		    <div class="col col-md-6">
+		    <div class="col col-sm-6">
 		    	<div class="texti">
 		    		<h3 class="text-center">Three day pass</h3>
 		    		<p>With access to the MONO 2017 venues over the entire festival weekend, grants access to all bars exept special VIP bars, this is our entry-level ticket to an incredible music experience.</p>
 		    	</div>
 		    </div>
-		    <div class="col col-md-12">
+		    <div class="col col-sm-12">
 		    	<div class="texti">
 		    		<h3 class="text-center">VIP pass</h3>
 		    		<p>With access to the MONO 2017 venues over the entire festival weekend, it also grants access to special VIP lounges, bars and a special VIP concert held in the "Kaldalón" on Saturday, this is our best way to experience an incredible music festival.</p>
 		    	</div>
 		    </div>
-		    <div class="col col-md-12">
+		    <div class="col col-sm-12">
 		    	<div class="takki text-center" data-toggle="modal" data-target="#myModal"><p>SUBSCRIBE TO OUR<br>TICKET-WATCH</p></div>
 		    </div>
 		    <div id="myModal" class="modal fade" role="dialog">
@@ -286,19 +272,20 @@
 		  </div>
 		</div>
 	</section>
+	<!--
 	<section id="store">
 		<div class="container">
 			<div class="text-center">
 				<h1>STORE</h1>
 				<div class="row">
-					<div class="col col-md-12">
+					<div class="col col-sm-12">
 		    		<div class="texti">
 		    			<h3 class="text-center">INFORMATION</h3>
 		    			<p class="storep">If you are MONO fan you might be interested to buy one of our MONO products below!</p>
 		    		</div>
 		    	
 		    	</div>
-		    	<div class="col col-md-3">
+		    	<div class="col col-sm-3">
 		    		<div class="texti">
 		    			<h3 class="text-center">Tshirts</h3>
 		    			<img class="storep1" src="img\store\ttshirt.png">
@@ -306,7 +293,7 @@
 		    			<a href="#0" class="cd-add-to-cart" data-price="38.99">Add To Cart</a>
 		    		</div>
 		    	</div>
-		    	<div class="col col-md-3">
+		    	<div class="col col-sm-3">
 		    		<div class="texti">
 		    			<h3 class="text-center">Snapback</h3>
 		    			<img class="hat1" src="img\store\hat.png">
@@ -314,7 +301,7 @@
 		    			<a href="#1" class="cd-add-to-cart" data-price="38.99">Add To Cart</a>
 		    		</div>
 		    	</div>
-		    	<div class="col col-md-3">
+		    	<div class="col col-sm-3">
 		    		<div class="texti">
 		    			<h3 class="text-center">Hoodie</h3>
 		    			<img class="hoodie1" src="img\store\hoodie2.png">
@@ -323,7 +310,7 @@
 		    			
 		    		</div>
 		    	</div>
-		    	<div class="col col-md-3">
+		    	<div class="col col-sm-3">
 		    		<div class="texti">
 		    			<h3 class="text-center">Hoodie</h3>
 		    			<img class="hoodie2" src="img\store\hoodie.png">
@@ -332,7 +319,7 @@
 		    			
 		    		</div>
 		    	</div>
-		    	<div class="col col-md-12">
+		    	<div class="col col-sm-12">
 		    		<div class="texti">
 		    			<h3 class="text-center">Can't find your size?</h3>
 		    			<p class="storep">If you are have a special request of finding your own perfect size then you can always <a href="">contact</a>
@@ -349,10 +336,10 @@
 	<div class="cd-cart-container empty">
 	<a href="#0" class="cd-cart-trigger">
 		Cart
-		<ul class="count"> <!-- cart items count -->
+		<ul class="count">
 			<li>0</li>
 			<li>0</li>
-		</ul> <!-- .count -->
+		</ul>
 	</a>
 	<div class="cd-cart">
 		<div class="wrapper">
@@ -363,14 +350,11 @@
 			
 			<div class="body">
 				<ul>
-					<!-- products added to the cart will be inserted here using JavaScript -->
 				</ul>
 			</div>
 
 	<footer>
 		<a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
-		
-		<div class="sponsors"></div>
 	</footer>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	
@@ -378,5 +362,6 @@
 		if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
 	</script>
 	<script src="js/main.js"></script>
+	-->
 </body>
 </html>
